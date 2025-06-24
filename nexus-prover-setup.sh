@@ -83,15 +83,21 @@ done
 for ((i=0;i<NODE_COUNT;i++)); do
   SESSION_NAME="nexus$((i+1))"
   NODE_ID="${NODE_IDS[$i]}"
-  screen -S "$SESSION_NAME" -X quit 2>/dev/null || true
+  
+  screen -S "$SESSION_NAME" -X quit >/dev/null 2>&1 || true
+
   echo -e "${GREEN}[*] Launching node-id $NODE_ID in screen session '$SESSION_NAME'...${NC}"
+  
   screen -dmS "$SESSION_NAME" bash -c "cd $WORKDIR && nexus-network start --node-id $NODE_ID 2>&1 | tee $WORKDIR/log_$SESSION_NAME.txt"
+  
   sleep 1
+
   if screen -list | grep -q "$SESSION_NAME"; then
-    echo -e "${GREEN}[✓] node-id $NODE_ID running in '$SESSION_NAME'${NC}"
+    echo -e "${GREEN}[✓] Installation complete. Screen '$SESSION_NAME' created successfully for node-id $NODE_ID.${NC}"
   else
-    echo -e "${RED}[!] Failed to start node-id $NODE_ID in '$SESSION_NAME'${NC}"
+    echo -e "${RED}[✗] Installation failed. No screen created for node-id $NODE_ID (${SESSION_NAME}).${NC}"
   fi
+
   sleep 1
 done
 
