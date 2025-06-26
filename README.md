@@ -104,6 +104,8 @@ nexus-network start --node-id <your-node-id>
 
 → Monitor and Manage your `node`: [GO HERE](https://github.com/SKaaalper/Nexus-Testnet-III/blob/main/README.md#monitor-or-manage-nodes)
 
+![image](https://github.com/user-attachments/assets/19232099-9b15-4c94-9cd5-5099c4b89e6f)
+
 - **More Info's** at [Official Docs](https://docs.nexus.xyz/layer-1/testnet/testnet-3)
 - **Nexus Official** [Discord](https://discord.gg/zH7rdrt29E)
 - **Nexus Official** [Twitter](https://x.com/NexusLabs)
