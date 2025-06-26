@@ -72,6 +72,37 @@ screen -dmS nexus3 bash -c "nexus-network start --node-id YOUR_NEW_NODE_ID"
 
 ![image](https://github.com/user-attachments/assets/3a9079c6-31b0-43d7-80a2-794be4def4b3)
 
+## Update your node to version `v0.8.13` to stay in sync and continue participating.
+
+**How to Update**:
+
+1. 1. Stop your current prover process (`q or Ctrl+C`)
+or
+Delete old `screen`:
+```
+screen -XS nexus1 quit
+```
+
+2. Download and install the latest `CLI`:
+```
+curl https://cli.nexus.xyz/ | sh
+```
+
+3. (Optional) Create new `screen`:
+```
+screen -S nexus1
+```
+→ **Note**: `If you only pressed Ctrl + C, there's no need to create a new screen session`.
+
+4. Start your node again:
+```
+nexus-network start --node-id <your-node-id>
+```
+→ Get your Node id HERE: https://app.nexus.xyz/nodes
+→ Make sure you replace <your-node-id> with your actual Node ID.
+→ Monitor and Manage your `node`: 
+
+Note: If you only pressed Ctrl + C, there's no need to create a new screen session.
 - **More Info's** at [Official Docs](https://docs.nexus.xyz/layer-1/testnet/testnet-3)
 - **Nexus Official** [Discord](https://discord.gg/zH7rdrt29E)
 - **Nexus Official** [Twitter](https://x.com/NexusLabs)
