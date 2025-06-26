@@ -76,7 +76,7 @@ screen -dmS nexus3 bash -c "nexus-network start --node-id YOUR_NEW_NODE_ID"
 
 **How to Update**:
 
-1. 1. Stop your current prover process (`q or Ctrl+C`)
+1. Stop your current prover process (`q or Ctrl+C`)
 or
 Delete old `screen`:
 ```
@@ -98,11 +98,10 @@ screen -S nexus1
 ```
 nexus-network start --node-id <your-node-id>
 ```
-→ Get your Node id HERE: https://app.nexus.xyz/nodes
-→ Make sure you replace <your-node-id> with your actual Node ID.
-→ Monitor and Manage your `node`: 
+→ Get your `Node id` HERE: https://app.nexus.xyz/nodes
+→ Make sure you replace `<your-node-id>` with your actual `Node ID`.
+→ Monitor and Manage your `node`: [GO HERE](https://github.com/SKaaalper/Nexus-Testnet-III/blob/main/README.md#monitor-or-manage-nodes)
 
-Note: If you only pressed Ctrl + C, there's no need to create a new screen session.
 - **More Info's** at [Official Docs](https://docs.nexus.xyz/layer-1/testnet/testnet-3)
 - **Nexus Official** [Discord](https://discord.gg/zH7rdrt29E)
 - **Nexus Official** [Twitter](https://x.com/NexusLabs)
