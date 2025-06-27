@@ -76,9 +76,7 @@ screen -dmS nexus3 bash -c "nexus-network start --node-id YOUR_NEW_NODE_ID"
 
 **How to Update**:
 
-1. Stop your current prover process (`q or Ctrl+C`)
-or
-Delete old `screen`:
+1. Delete old `screen`:
 ```
 screen -XS nexus1 quit
 ```
@@ -88,11 +86,10 @@ screen -XS nexus1 quit
 curl https://cli.nexus.xyz/ | sh
 ```
 
-3. (Optional) Create new `screen`:
+3. Create new `screen`:
 ```
 screen -S nexus1
 ```
-→ **Note**: `If you only pressed Ctrl + C, there's no need to create a new screen session`.
 
 4. Start your node again:
 ```
