@@ -7,7 +7,7 @@
 # Table Of Contents:
   - [Hardware requirements](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#nexus-prover-node--recommended-hardware-requirements)
   - [VPS Suggestion](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#vps-suggestions)
-  - [Run the Node:](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#run-the-auto-installer)
+  - [Run Node](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#run-the-auto-installer)
   - [Add More NODE via Screen](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#if-you-want-to-add-more-nodes)
   - [Manage your NODE](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#monitor-or-manage-nodes)
   - [Update your Node](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#update-your-node-to-stay-in-sync-and-continue-participating)
