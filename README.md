@@ -1,4 +1,4 @@
-# Nexus Incentivized Testnet-III — Prover-Node Setup
+# Nexus Incentivized Testnet III — Prover-Node Setup
 
 ![image](https://github.com/user-attachments/assets/2fd0802e-d029-44a5-a309-4cc35152810a)
 
