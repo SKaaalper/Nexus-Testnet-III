@@ -4,6 +4,9 @@
 
 ### Testnet III will be live until the Nexus Mainnet launch later in Q3 2025. This means that, unlike past Nexus testnets, participants in every country will have weeks, not days, to contribute to the Nexus supercomputer and earn rewards.
 
+# Table Of Contents:
+
+
 ## Features:
 - **Installs all required dependencies**
 - **Supports 1 to 10 simultaneous nodes**
@@ -72,7 +75,7 @@ screen -dmS nexus3 bash -c "nexus-network start --node-id YOUR_NEW_NODE_ID"
 
 ![image](https://github.com/user-attachments/assets/3a9079c6-31b0-43d7-80a2-794be4def4b3)
 
-## Update your node to version `v0.8.13` to stay in sync and continue participating.
+## Update your node to stay in sync and continue participating.
 
 **How to Update**:
 
@@ -102,6 +105,51 @@ nexus-network start --node-id <your-node-id>
 → Monitor and Manage your `node`: [GO HERE](https://github.com/SKaaalper/Nexus-Testnet-III/blob/main/README.md#monitor-or-manage-nodes)
 
 ![image](https://github.com/user-attachments/assets/19232099-9b15-4c94-9cd5-5099c4b89e6f)
+
+### FULL COMMANDS TO FIX `GLIBC 2.39` ISSUE.
+
+1. Install required packages:
+```
+sudo apt update
+sudo apt install -y gawk bison gcc make wget tar
+```
+
+2. Download GLIBC 2.39:
+```
+cd ~
+wget -c https://ftp.gnu.org/gnu/glibc/glibc-2.39.tar.gz
+tar -zxvf glibc-2.39.tar.gz
+cd glibc-2.39
+```
+
+3. Create a build directory:
+```
+mkdir glibc-build
+cd glibc-build
+../configure --prefix=/opt/glibc-2.39
+```
+
+4. Compile and install (this will take time depending on CPU):
+```
+make -j$(nproc)
+sudo make install
+cd ~
+```
+
+5. Create screen session:
+```
+screen -S nexus1
+```
+
+6. Run the Nexus Node:
+→  Replace `<your-node-id>` with your actual `node ID`:
+```
+/opt/glibc-2.39/lib/ld-linux-x86-64.so.2 \
+--library-path /opt/glibc-2.39/lib:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu \
+/root/.nexus/bin/nexus-network start --node-id <your-node-id>
+```
+→ Get your Node id HERE: https://app.nexus.xyz/nodes
+→ Monitor and Manage your `node`: [GO HERE](https://github.com/SKaaalper/Nexus-Testnet-III/blob/main/README.md#monitor-or-manage-nodes)
 
 - **More Info's** at [Official Docs](https://docs.nexus.xyz/layer-1/testnet/testnet-3)
 - **Nexus Official** [Discord](https://discord.gg/zH7rdrt29E)
