@@ -5,7 +5,14 @@
 ### Testnet III will be live until the Nexus Mainnet launch later in Q3 2025. This means that, unlike past Nexus testnets, participants in every country will have weeks, not days, to contribute to the Nexus supercomputer and earn rewards.
 
 # Table Of Contents:
-
+  - [Hardware requirements](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#nexus-prover-node--recommended-hardware-requirements)
+  - [VPS Suggestion](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#vps-suggestions)
+  - [Run the Node:](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#run-the-auto-installer)
+  - [Add More NODE via Screen](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#if-you-want-to-add-more-nodes)
+  - [Manage your NODE](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#monitor-or-manage-nodes)
+  - [Update your Node:](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#update-your-node-to-stay-in-sync-and-continue-participating)
+  - [FIX GLIBC 2.39 ISSUE](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#full-commands-to-fix-glibc-239-issue)
+  - [Need Help? Join TG Group](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#join-the-telegram-for-updates-and-help)
 
 ## Features:
 - **Installs all required dependencies**
@@ -149,6 +156,7 @@ screen -S nexus1
 /root/.nexus/bin/nexus-network start --node-id <your-node-id>
 ```
 → Get your Node id HERE: https://app.nexus.xyz/nodes
+
 → Monitor and Manage your `node`: [GO HERE](https://github.com/SKaaalper/Nexus-Testnet-III/blob/main/README.md#monitor-or-manage-nodes)
 
 - **More Info's** at [Official Docs](https://docs.nexus.xyz/layer-1/testnet/testnet-3)
