@@ -95,6 +95,9 @@ screen -XS nexus1 quit
 ```
 curl https://cli.nexus.xyz/ | sh
 ```
+```
+source ~/.bashrc
+```
 
 3. Create new `screen`:
 ```
