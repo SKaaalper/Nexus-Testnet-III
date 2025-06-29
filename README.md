@@ -7,6 +7,7 @@
 # Table Of Contents:
   - [Hardware requirements](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#nexus-prover-node--recommended-hardware-requirements)
   - [VPS Suggestion](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#vps-suggestions)
+  - [Guide on How to Buy a VPS from Contabo](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#guide-on-how-to-buy-vps-contabo)
   - [Run Node](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#run-the-auto-installer)
   - [Add More NODE via Screen](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#if-you-want-to-add-more-nodes)
   - [Manage your NODE](https://github.com/SKaaalper/Nexus-Testnet-III?tab=readme-ov-file#monitor-or-manage-nodes)
