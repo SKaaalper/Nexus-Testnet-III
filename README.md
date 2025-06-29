@@ -16,30 +16,43 @@
 
 ## Features:
 - **Installs all required dependencies**
-- **Supports 1 to 10 simultaneous nodes**
+- **Supports 1 to 10 simultaneous nodes** `(recommended 1 Node ID : 1 VPS Server, if your server is low RAM)`
 - **Automatically installs Rust, Nexus CLI, and `nexus-network`**
-- **Launches multiple nodes in `screen` sessions**
+- **Launches multiple nodes in `screen` sessions** 
 
-## Nexus Prover Node — Recommended Hardware Requirements:
+## 💻 Nexus Prover Node — Recommended Hardware Requirements
 
-| Component        | Minimum                  | Recommended                  |
+| **Component**    | **Minimum**              | **Recommended**              |
 | ---------------- | ------------------------ | ---------------------------- |
-| **CPU**          | 2 cores (x86\_64)        | 4 cores or higher            |
-| **RAM**          | 2 GB                     | 4–8 GB                       |
+| **CPU**          | **6 cores (x86\_64)**    | **8 cores or higher**        |
+| **RAM**          | **12 GB**                | 12 GB or more                |
 | **Disk Space**   | 10 GB SSD                | 20 GB SSD (NVMe if possible) |
 | **Bandwidth**    | 5 Mbps (up/down)         | 10+ Mbps stable              |
 | **OS**           | Ubuntu 22.04             | Ubuntu 24.04 LTS             |
 | **Architecture** | x86\_64                  | x86\_64                      |
 | **Other**        | Root access + open ports | VPS or Dedicated Server      |
 
-## VPS Suggestions:
+<details>
+<summary>⚠️ Memory Notice</summary>
 
-| Provider          | Plan Example              | Meets Requirements?                   |
-| ----------------- | ------------------------- | ------------------------------------- |
-| **Contabo VPS S** | 4 vCPU / 8 GB / 50 GB SSD | ✅ Yes                                 |
-| **Hetzner CX21**  | 2 vCPU / 4 GB / 40 GB SSD | ✅ Yes                                 |
-| **DigitalOcean**  | 2 vCPU / 2 GB / 50 GB SSD | ⚠️ Minimum only                       |
-| **Localhost**     | Home PC via Ubuntu VM     | ⚠️ Not recommended if unstable uptime |
+✅ **12 GB of RAM** is now the safe minimum for running a Nexus Prover node without crashes.
+
+You can run multiple nodes on one VPS/device, but not recommended unless you have enough RAM.  
+If memory is too low, it may cause system crashes ❗❗  
+
+💡 **More RAM = Higher Cycles/sec**
+
+</details>
+
+## 💡 VPS Suggestions:
+
+| **Provider**       | **Plan Example**                              | **Meets 12GB RAM?** | **Notes**                          |
+| ------------------ | --------------------------------------------- | ------------------- | ---------------------------------- |
+| **Contabo VPS 30** | 6 vCPU / 12 GB RAM / 300 GB SSD for \~\$12/mo | ✅ Yes               | 💯 Recommended                     |
+| Hetzner CPX41      | 8 vCPU / 16 GB RAM / 160 GB SSD               | ✅ Yes               | Excellent performance              |
+| DigitalOcean       | 2 vCPU / 2–8 GB RAM                           | ❌ No                | Needs upgrade                      |
+| Localhost (VM)     | Ubuntu VM on Home PC                          | ⚠️ Maybe            | Not reliable if uptime is unstable |
+
 
 ## **Guide on How to buy VPS**: [Contabo](https://medium.com/@Airdrop_Jheff/guide-on-how-to-buy-a-vps-server-from-contabo-and-set-it-up-on-termius-0928e0e5cb5d)
 
