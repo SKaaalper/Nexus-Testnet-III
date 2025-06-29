@@ -81,13 +81,6 @@ nexus-network start --node-id <your-node-id>
 - Change `nexus2`, `nexus3`, `nexus4`, `etc`., depending on the next available `screen` session number.
 - Replace `YOUR_NEW_NODE_ID` with your actual `Node ID` from the **Nexus dashboard**.
 
-## For Multi-Nodes:
-- Each nexus-network instance (per node ID) may need 1–2 GB RAM.
-- So for 5 nodes:
-  - **CPU**: `4–6 vCores`
-  - **RAM**: `6–10 GB` total
-  - **Disk**: `15–25 GB`
-
 🔔 Note:
 **Avoid using duplicate `screen` session names to prevent conflicts that could stop or disable other running nodes.**
 
