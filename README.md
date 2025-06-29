@@ -32,11 +32,13 @@
 | **Architecture** | x86\_64                  | x86\_64                      |
 | **Other**        | Root access + open ports | VPS or Dedicated Server      |
 
+
 > ⚠️ **Memory Notice**  
 > ✅ **12 GB** of RAM is now the safe minimum for running a Nexus Prover node without crashes.  
 > You can run **multiple nodes** on one **VPS/device**, but not recommended unless you have enough RAM.  
 > If **memory** is too low, it may cause **system crashes** ❗❗  
 > 💡 **More RAM** = **Higher Cycles/sec**
+
 
 ## 💡 VPS Suggestions:
 
@@ -63,9 +65,16 @@ wget -q https://raw.githubusercontent.com/SKaaalper/Nexus-Testnet-III/main/nexus
 ## If you want to add more nodes
 ```
 cd /root/nexus-prover
-screen -dmS nexus3 bash -c "nexus-network start --node-id YOUR_NEW_NODE_ID"
 ```
-- Change `nexus3`, `nexus4`, `nexus5`, `etc`., depending on the next available `screen` session number.
+- Create `screen`:
+```
+screen -S nexus2
+```
+- Run Node:
+```
+nexus-network start --node-id <your-node-id>
+```
+- Change `nexus2`, `nexus3`, `nexus4`, `etc`., depending on the next available `screen` session number.
 - Replace `YOUR_NEW_NODE_ID` with your actual `Node ID` from the **Nexus dashboard**.
 
 ## For Multi-Nodes:
