@@ -33,10 +33,13 @@
 | **Other**        | Root access + open ports | VPS or Dedicated Server      |
 
 
-> ⚠️ **Memory Notice**  
-> ✅ **12 GB** of RAM is now the safe minimum for running a Nexus Prover node without crashes.  
+> ⚠️ **Memory Notice**
+> 
+> ✅ **12 GB** of RAM is now the safe minimum for running a Nexus Prover node without crashes.
+> 
 > You can run **multiple nodes** on one **VPS/device**, but not recommended unless you have enough RAM.  
-> If **memory** is too low, it may cause **system crashes** ❗❗  
+> If **memory** is too low, it may cause **system crashes** ❗❗
+> 
 > 💡 **More RAM** = **Higher Cycles/sec**
 
 
